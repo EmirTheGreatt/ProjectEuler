@@ -27,7 +27,5 @@ for i in range(1, 20):
         fcount = (factorization).count(k)
         Pcount = thePlist.count(k)
         if fcount-Pcount > 0:
-            print("yey ", k)
             thePlist += [k]*(fcount-Pcount)
-print(thePlist)
 print(prod(array(thePlist)))
