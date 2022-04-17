@@ -1,7 +1,8 @@
 from string import ascii_uppercase
 from re import sub
+import os.path
 
-namesfile = open("../p22_names.txt", "r")
+namesfile = open(os.path.dirname(__file__)+"\\..\\p22_names.txt", "r")
 names = namesfile.read()
 names = names.split(",")
 names = [sub("[\"]", "", i) for i in names]
